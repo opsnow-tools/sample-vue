@@ -1,7 +1,7 @@
 def SERVICE_GROUP = "sample"
 def SERVICE_NAME = "vue"
 def IMAGE_NAME = "${SERVICE_GROUP}-${SERVICE_NAME}"
-def REPOSITORY_URL = "https://github.com/gelius7/sample-vue.git"
+def REPOSITORY_URL = "https://github.com/opsnow-tools/sample-vue.git"
 def REPOSITORY_SECRET = ""
 def SLACK_TOKEN_DEV = ""
 def SLACK_TOKEN_DQA = ""
@@ -94,4 +94,3 @@ podTemplate(label: label, containers: [
     }
   }
 }
-© 2020 GitHub, Inc.

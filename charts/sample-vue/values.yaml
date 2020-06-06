@@ -75,22 +75,6 @@ livenessProbe:
   periodSeconds: 10
   failureThreshold: 3
 
-# livenessProbe:
-#   exec:
-#     command:
-#     - cat
-#     - /tmp/healthy
-#   initialDelaySeconds: 3
-#   periodSeconds: 10
-# livenessProbe:
-#   tcpSocket:
-#     port: 80
-#   initialDelaySeconds: 3
-#   periodSeconds: 10
-
-# hostNetwork: true
-# dnsPolicy: Default
-
 nodeSelector: {}
 
 tolerations: []
@@ -98,15 +82,11 @@ tolerations: []
 affinity: {}
 
 env: {}
-  # - name: MESSAGE
-  #   value: "hello world"
 
 configmap:
   enabled: false
   data: {}
-    # MESSAGE: "hello world"
 
 secret:
   enabled: false
   data: {}
-    # SECRET: "c2VjcmV0IHdvcmxkCg=="
